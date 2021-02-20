@@ -60,7 +60,7 @@
       {{ range $person.organizations }}
       <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
         {{ with .url }}<a href="{{ . }}" target="_blank" itemprop="url" rel="noopener">{{ end }}
-          <span itemprop="name">{{ .name }}</span>
+          <span itemprop="name">&nbsp;{{ .name }}</span>
           {{ if .url }}</a>{{ end }}
       </h3>
       {{ end }}
